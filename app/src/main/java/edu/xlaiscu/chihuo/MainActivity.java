@@ -22,20 +22,6 @@ public class MainActivity extends AppCompatActivity {
         restaurantListView = (ListView) findViewById(R.id.listview);
         dataService = new DataService();
 
-//        List<Restaurant> restaurants = dataService.getRestaurantData();
-//        for (int i = 0; i < 10; i++) {
-//            restaurants.add(new Restaurant("Cai Xiang Gen", "San Francisco", "Chinese", null));
-//        }
-//        RestaurantAdapter adapter = new RestaurantAdapter(this, restaurants);
-//        restaurantListView.setAdapter(adapter);
-        new AsyncTask<Void, Void, Void>() {
-            @Override
-            protected Void doInBackground(Void... params) {
-                YelpApi yelp = new YelpApi();
-                yelp.searchForBusinessesByLocation("dinner", "San Francisco, CA", 20);
-                return null;
-            }
-        }.execute();
     }
 
     @Override
