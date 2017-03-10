@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle = "bold"
-            android:textSize = "18sp"/>
+            android:textSize = "30sp"/>
 
         <TextView
             android:id="@+id/restaurant_address"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@id/restaurant_name"
-            android:textSize = "13sp"/>
+            android:textSize = "24sp"/>
 
         <TextView
             android:id="@+id/restaurant_type"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@id/restaurant_address"
-            android:textSize = "13sp"/>
+            android:textSize = "24sp"/>
 
     </RelativeLayout>
 </LinearLayout>
